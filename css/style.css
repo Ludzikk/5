@@ -333,7 +333,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 8em 0em 2em;
 }
 .main-contact__box {
   display: flex;
@@ -426,7 +426,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 8em 0em 2em;
 }
 .main-contact__box {
   display: flex;
