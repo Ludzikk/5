@@ -61,6 +61,19 @@
 			}
 		}
 	}
+
+	.main-contact {
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			&-left, &-middle, &-right {
+				margin: 1.5em;
+				width: 25%;
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -100,10 +113,14 @@
 		}
 	}
 
-    .main-menu {
+	.main-menu {
 		&__box {
-			&-item {
+			&-title {
+				font-size: 4.4rem;
+				text-transform: uppercase;
+			}
 
+			&-item {
 				&-left {
 					&-name {
 						font-size: 2rem;
@@ -115,7 +132,6 @@
 				}
 
 				&-right {
-
 					&-icon {
 						font-size: 2rem;
 					}
@@ -124,6 +140,26 @@
 						font-size: 2.2rem;
 					}
 				}
+			}
+		}
+	}
+
+	.main-contact {
+		&__box {
+			&-title-main {
+				font-size: 4.2rem;
+			}
+
+			&-icon {
+				font-size: 4.4rem;
+			}
+	
+			&-title {
+				font-size: 2.6rem;
+			}
+	
+			&-text {
+				font-size: 2rem;
 			}
 		}
 	}
@@ -177,6 +213,26 @@
 	.footer {
 		&__text {
 			font-size: 2.2rem;
+		}
+	}
+
+	.main-contact {
+		&__box {
+			&-title-main {
+				font-size: 4.4rem;
+			}
+
+			&-icon {
+				font-size: 4.6rem;
+			}
+	
+			&-title {
+				font-size: 2.8rem;
+			}
+	
+			&-text {
+				font-size: 2.2rem;
+			}
 		}
 	}
 }
