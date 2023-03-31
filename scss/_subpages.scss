@@ -35,6 +35,27 @@
 			font-size: 4rem;
 			text-transform: uppercase;
 			color: $white;
+
+			&-decoration {
+				position: relative;
+				padding: 0 0.25em;
+				margin: 0 0.25em;
+				border-top-left-radius: 25px;
+				color: $black;
+				background-color: $second;
+
+				&::before {
+					content: "";
+					position: absolute;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					border-top-left-radius: 25px;
+					border: 2px solid $second;
+					animation: pulse-span 1s linear infinite;
+					z-index: -1;
+				}
+			}
 		}
 
 		&-item {
@@ -96,8 +117,29 @@
 			padding: 0.5em;
 			font-size: 4rem;
 			text-transform: uppercase;
-            text-align: center;
-            color: $black;
+			text-align: center;
+			color: $black;
+
+			&-decoration {
+				position: relative;
+				padding: 0 0.25em;
+				margin: 0 0.25em;
+				border-top-right-radius: 25px;
+				color: $black;
+				background-color: $second;
+
+				&::before {
+					content: "";
+					position: absolute;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					border-top-right-radius: 25px;
+					border: 2px solid $second;
+					animation: pulse-span 1s linear infinite;
+					z-index: -1;
+				}
+			}
 		}
 
 		&-icon {
@@ -118,8 +160,10 @@
 			font-size: 1.8rem;
 		}
 
-        &-left, &-middle, &-right {
-            padding: 1em 0;
-        }
+		&-left,
+		&-middle,
+		&-right {
+			padding: 1em 0;
+		}
 	}
 }
