@@ -6,9 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="keywords" content="pizza, pizzeria, jedzenie, włoska kuchnia" />
 		<title>Pizzeria Bolonia - Home</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./css/style.css" />
 		<script
 			src="https://kit.fontawesome.com/bdb2f8ae99.js"
@@ -20,7 +23,9 @@
 			<div class="wrapper">
 				<div class="nav__flex">
 					<p class="nav__logo">
-						<i class="fa-solid fa-pizza-slice nav__logo-icon"></i>Bolonia
+						<a class="nav__logo-link" href="#"
+							><i class="fa-solid fa-pizza-slice nav__logo-icon"></i>Bolonia</a
+						>
 					</p>
 					<button class="nav__hamburger">
 						<i class="fa-solid fa-bars nav__hamburger-icon"></i>
@@ -39,6 +44,32 @@
 				</div>
 			</div>
 		</nav>
+		<nav class="nav nav-mobile">
+			<p class="nav__logo">
+				<a class="nav__logo-link" href="#"
+					><i class="fa-solid fa-pizza-slice nav__logo-icon"></i>Bolonia</a
+				>
+			</p>
+			<button class="nav__hamburger nav__hamburger-mobile above">
+				<i class="fa-solid fa-bars nav__hamburger-icon nav__hamburger-icon-mobile"></i>
+			</button>
+			<div class="nav-mobile__links">
+				<!-- <button class="nav__hamburger nav__hamburger-mobile nav-mobile__links-hamburger-mobile">
+					<i class="fa-solid fa-bars nav__hamburger-icon nav__hamburger-icon-mobile"></i>
+				</button> -->
+				<ul class="nav-mobile__links-list">
+					<li class="nav-mobile__links-list-item">
+						<a class="nav__list-item-link" href="#about-us">O nas</a>
+					</li>
+					<li class="nav-mobile__links-list-item">
+						<a class="nav__list-item-link" href="#">Menu</a>
+					</li>
+					<li class="nav-mobile__links-list-item">
+						<a class="nav__list-item-link" href="#">Kontakt</a>
+					</li>
+				</ul>
+			</div>
+		</nav>	
 		<header class="header">
 			<div class="wrapper">
 				<div class="header__flex">
@@ -49,11 +80,14 @@
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 					</p>
 				</div>
-				<i class="fa-solid fa-arrow-right header__arrow"></i>
+				<a class="header__link" href="#about-us"><i class="fa-solid fa-arrow-right header__arrow"></i></a>
 			</div>
 			<div class="header__bg"></div>
 		</header>
-		<main class="main"></main>
+		<main class="main">
+			<section class="main__about-us" id="about-us"></section>
+		</main>
 		<footer></footer>
+		<script src="./js/script.js"></script>
 	</body>
 </html>

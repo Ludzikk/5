@@ -1,5 +1,7 @@
 @media (min-width: 768px){
     .nav {
+        display: block;
+        
         &__hamburger {
             display: none;
         }
@@ -7,6 +9,10 @@
         &__list {
             display: flex;
         }
+    }
+
+    .nav-mobile {
+        display: none;
     }
 
     .header {

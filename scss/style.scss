@@ -12,6 +12,7 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
 }
 
 body {
@@ -20,10 +21,14 @@ body {
 	color: $white;
 }
 
+.sticky-body {
+	overflow: hidden;
+}
+
 button,
 input,
 body {
-    font-family: 'Nunito', sans-serif;
+	font-family: "Nunito", sans-serif;
 }
 
 .wrapper {
@@ -33,6 +38,7 @@ body {
 }
 
 .nav {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -50,7 +56,7 @@ body {
 
 	&__hamburger {
 		padding: 0.5em;
-		font-size: 3rem;
+		font-size: 3.5rem;
 		border: none;
 		background: none;
 		color: $white;
@@ -60,6 +66,11 @@ body {
 	&__logo {
 		font-size: 3.5rem;
 		font-weight: bold;
+
+		&-link {
+			text-decoration: none;
+			color: $white;
+		}
 
 		&-icon {
 			padding: 0 0.5em;
@@ -83,6 +94,54 @@ body {
 		}
 	}
 }
+
+.nav-mobile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	padding: 0.25em;
+
+	&__links {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 2000px;
+		bottom: 0;
+		height: 100vh;
+		background-color: $black;
+		z-index: 2000;
+
+		&-hamburger-mobile {
+			position: absolute;
+			right: 0;
+			top: 0;
+			font-size: 3.5rem;
+		}
+
+		&-list {
+			list-style: none;
+
+			&-item {
+				font-size: 4rem;
+				padding: 1em;
+			}
+		}
+	}
+}
+
+.above {
+	z-index: 10000;
+}
+
+.active {
+	display: flex;
+	animation: nav-mobile 1s forwards;
+}
+
 
 .header {
 	position: relative;
@@ -112,34 +171,51 @@ body {
 	}
 
 	&__title {
-        padding: 1em;
-        font-size: 4.2rem;
+		padding: 1em;
+		font-size: 4.2rem;
 		color: $white;
 
 		&-decoration {
-            padding: 0.3em;
-            border-top-left-radius: 50px;
-            border-bottom-right-radius: 10px;
+			padding: 0.3em;
+			border-top-left-radius: 50px;
+			border-bottom-right-radius: 10px;
 			color: $second;
 			background-color: $black;
 		}
 	}
 
-    &__text{
-        padding: 0.5em;
-        font-size: 2.4rem;
-    }
+	&__text {
+		padding: 0.5em;
+		font-size: 2.4rem;
+	}
 
-    &__arrow {
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        transform: translate(-50%) rotate(90deg);
-        padding: 0.5em;
-        font-size: 3.5rem;
-        border-radius: 50%;
-        border: 1px solid white;
-    }
+	&__link {
+		text-decoration: none;
+		color: $white;
+	}
+
+	&__arrow {
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		transform: translate(-50%) rotate(90deg);
+		padding: 0.5em;
+		font-size: 3.5rem;
+		border-radius: 50%;
+		border: 1px solid white;
+
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			width: 100%;
+			height: 100%;
+			border: 1px solid $white;
+			border-radius: 50%;
+			animation: pulse 1s linear infinite;
+		}
+	}
 }
 
 main {
