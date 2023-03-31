@@ -8,12 +8,20 @@
     opacity: 0;
   }
 }
-@keyframes nav-mobile {
+@keyframes nav-mobile-show {
   from {
     left: 2000px;
   }
   to {
     left: 0;
+  }
+}
+@keyframes nav-mobile-hide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 2000px;
   }
 }
 *,
@@ -116,7 +124,6 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  left: 2000px;
   bottom: 0;
   height: 100vh;
   background-color: #02040f;
@@ -142,7 +149,12 @@ body {
 
 .active {
   display: flex;
-  animation: nav-mobile 1s forwards;
+  animation: nav-mobile-show 1s forwards;
+}
+
+.de-active {
+  display: flex;
+  animation: nav-mobile-hide 1s forwards;
 }
 
 .header {

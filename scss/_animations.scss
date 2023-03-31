@@ -10,12 +10,22 @@
     }
 }
 
-@keyframes nav-mobile {
+@keyframes nav-mobile-show {
     from {
         left: 2000px;
     }
 
     to {
         left: 0;
+    }
+}
+
+@keyframes nav-mobile-hide {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 2000px;
     }
 }

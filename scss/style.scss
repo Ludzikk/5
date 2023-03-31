@@ -109,7 +109,6 @@ body {
 		position: absolute;
 		top: 0;
 		right: 0;
-		left: 2000px;
 		bottom: 0;
 		height: 100vh;
 		background-color: $black;
@@ -139,9 +138,13 @@ body {
 
 .active {
 	display: flex;
-	animation: nav-mobile 1s forwards;
+	animation: nav-mobile-show 1s forwards;
 }
 
+.de-active {
+	display: flex;
+	animation: nav-mobile-hide 1s forwards;
+}
 
 .header {
 	position: relative;
