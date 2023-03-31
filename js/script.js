@@ -11,7 +11,6 @@ const handleNav = () => {
     navMobile.classList.toggle("de-active");
     document.body.classList.toggle("sticky-body");
 
-
     navLink.forEach((item) => {
         item.addEventListener("click", () => {
             navMobile.classList.remove("active");
@@ -19,7 +18,6 @@ const handleNav = () => {
             navMobile.classList.add("de-active");
         });
     });
-    
 };
 
 navHambur.forEach((item) => {
