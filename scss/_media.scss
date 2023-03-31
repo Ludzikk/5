@@ -1,0 +1,33 @@
+@media (min-width: 768px){
+    .nav {
+        &__hamburger {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+        }
+    }
+
+    .header {
+        background-image: url("../img/header-big.jpg");
+    }
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1200px){
+    .nav {
+        &__list {
+            &-item {
+                font-size: 2.6rem;
+            }
+        }
+
+        &__logo {
+            font-size: 3.7rem;
+        }
+    }
+}
