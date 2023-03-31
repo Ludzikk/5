@@ -1,6 +1,7 @@
 const navMobile = document.querySelector(".nav-mobile__links");
 const navHambur = document.querySelectorAll(".nav__hamburger-mobile");
 const navLink = document.querySelectorAll(".nav__list-item-link");
+const footerYear = document.querySelector(".footer__text-year");
 
 console.log(navMobile);
 console.log(navHambur);
@@ -24,3 +25,10 @@ const handleNav = () => {
 navHambur.forEach((item) => {
 	item.addEventListener("click", handleNav);
 });
+
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear();
+	footerYear.innerText = year;
+};
+
+handleCurrentYear();

@@ -18,6 +18,12 @@
     .header {
         background-image: url("../img/header-big.jpg");
     }
+
+    .footer {
+        &__text {
+            font-size: 2rem;
+        }
+    }
 }
 
 @media (min-width: 992px){
@@ -32,6 +38,28 @@
 
         &__arrow {
             font-size: 4rem;
+        }
+    }
+
+    .main {
+        &__about-us {
+            flex-direction: row;
+
+            &-text {
+                &-title{
+                    font-size: 3.4rem;
+                }
+                
+                &-p {
+                    font-size: 2.2rem;
+                }
+            }
+
+            &-photo {
+                img {
+                    height: 250px;
+                }
+            }
         }
     }
 }
@@ -56,6 +84,34 @@
 
         &__text {
             font-size: 2.8rem;
+        }
+    }
+
+    .main {
+        &__about-us {
+            flex-direction: row;
+
+            &-text {
+                &-title{
+                    font-size: 3.6rem;
+                }
+                
+                &-p {
+                    font-size: 2.4rem;
+                }
+            }
+
+            &-photo {
+                img {
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__text {
+            font-size: 2.2rem;
         }
     }
 }
