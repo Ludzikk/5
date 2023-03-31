@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./animations";
 
 *,
 *::before,
@@ -116,7 +117,7 @@ body {
 		color: $white;
 
 		&-decoration {
-            padding: 0.5em;
+            padding: 0.3em;
             border-top-left-radius: 50px;
             border-bottom-right-radius: 10px;
 			color: $second;
@@ -127,6 +128,17 @@ body {
     &__text{
         padding: 0.5em;
         font-size: 2.4rem;
+    }
+
+    &__arrow {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%) rotate(90deg);
+        padding: 0.5em;
+        font-size: 3.5rem;
+        border-radius: 50%;
+        border: 1px solid white;
     }
 }
 
