@@ -102,8 +102,23 @@ body {
   list-style: none;
 }
 .nav__list-item {
+  position: relative;
   padding: 0 1em;
   font-size: 2.4rem;
+}
+.nav__list-item::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 20px;
+  width: 0;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  transition: width 0.3s, border 0.3s;
+}
+.nav__list-item:hover::after {
+  width: 70%;
+  border: 1px solid #e59500;
 }
 .nav__list-item-link {
   text-decoration: none;

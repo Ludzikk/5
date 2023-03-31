@@ -84,8 +84,25 @@ body {
 		list-style: none;
 
 		&-item {
+			position: relative;
 			padding: 0 1em;
 			font-size: 2.4rem;
+
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: -5px;
+				left: 20px;
+				width: 0;
+				border: 1px solid transparent;
+				border-radius: 50px;
+				transition: width .3s, border .3s;
+			}
+			
+			&:hover::after {
+				width: 70%;
+				border: 1px solid $second;
+			}
 
 			&-link {
 				text-decoration: none;
