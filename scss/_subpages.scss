@@ -3,13 +3,28 @@
 }
 
 .main-menu {
-	margin-top: 10em;
-	margin-bottom: 4em;
+	position: relative;
+	padding-top: 10em;
+	padding-bottom: 4em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	color: $black;
+	background-image: url("../img/menu-small.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+
+	&-bg {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -100;
+	}
 
 	&__box {
 		display: flex;
@@ -19,6 +34,7 @@
 		&-title {
 			font-size: 4rem;
 			text-transform: uppercase;
+			color: $white;
 		}
 
 		&-item {
@@ -29,6 +45,7 @@
 			margin: 1em;
 			text-align: center;
 			border: 2px solid $black;
+			box-shadow: 0px 0px 15px $black;
 			background-color: $grey;
 
 			&-left {

@@ -103,6 +103,18 @@
 				}
 			}
 		}
+
+		.workers {
+			&__person {
+				&-name {
+					font-size: 3.2rem;
+				}
+	
+				&-whatdo {
+					font-size: 2.2rem;
+				}
+			}
+		}
 	}
 }
 
@@ -141,9 +153,23 @@
 				}
 			}
 		}
+
+		.workers {
+			&__person {
+				&-name {
+					font-size: 3.4rem;
+				}
+	
+				&-whatdo {
+					font-size: 2.4rem;
+				}
+			}
+		}
 	}
 
 	.main-menu {
+		background-image: url("../img/menu-big.jpg");
+
 		&__box {
 			&-title {
 				font-size: 4.4rem;
