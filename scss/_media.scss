@@ -1,5 +1,11 @@
 @import "./subpages";
 
+@media (min-width: 576px) {
+	.main-menu {
+		background-position-x: 850px;
+	}
+}
+
 @media (min-width: 768px) {
 	.nav {
 		display: block;
@@ -28,6 +34,8 @@
 	}
 
 	.main-menu {
+		background-position-x: 1100px;
+
 		&__box {
 			&-item {
 				flex-direction: row;
@@ -109,7 +117,7 @@
 				&-name {
 					font-size: 3.2rem;
 				}
-	
+
 				&-whatdo {
 					font-size: 2.2rem;
 				}
@@ -159,7 +167,7 @@
 				&-name {
 					font-size: 3.4rem;
 				}
-	
+
 				&-whatdo {
 					font-size: 2.4rem;
 				}
@@ -169,6 +177,7 @@
 
 	.main-menu {
 		background-image: url("../img/menu-big.jpg");
+		background-position: center;
 
 		&__box {
 			&-title {
