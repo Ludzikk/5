@@ -222,6 +222,15 @@
 			margin: 2em 0;
 			padding: 0.5em 1em;
 			width: 10%;
+			font-size: 1.8rem;
+			background-color: $black;
+			color: $white;
+			cursor: pointer;
+			transition: transform .3s;
+
+			&:hover {
+				transform: scale(1.05);
+			}
 		}
 	}
 }

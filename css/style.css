@@ -640,6 +640,14 @@ body {
   margin: 2em 0;
   padding: 0.5em 1em;
   width: 10%;
+  font-size: 1.8rem;
+  background-color: #02040f;
+  color: #f2e6e6;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.main-contact__form-button:hover {
+  transform: scale(1.05);
 }
 
 .wrapper-menu {
@@ -837,6 +845,14 @@ body {
   margin: 2em 0;
   padding: 0.5em 1em;
   width: 10%;
+  font-size: 1.8rem;
+  background-color: #02040f;
+  color: #f2e6e6;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.main-contact__form-button:hover {
+  transform: scale(1.05);
 }
 
 @media (min-width: 576px) {
