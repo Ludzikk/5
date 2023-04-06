@@ -1,4 +1,4 @@
-# Bebflix - login panel for movie site
+# Bolonia - pizzeria site
 
 **What i used in this project:**
 
